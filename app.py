@@ -124,7 +124,7 @@ def analyze_image():
         base64_image = base64.b64encode(image_data).decode('utf-8')
         
         response = client.chat.completions.create(
-            model="gpt-5-nano-2025-08-07",
+            model="gpt-4o",
             messages=[
                 {
                     "role": "user",
